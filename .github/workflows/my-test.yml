@@ -2,18 +2,18 @@ name : Node js Test Workflow
 on : push
 
 jobs:
-  Node-js-job :
-    runs-on : ubuntu-latest
-    steps : 
-      - name : Get code
-        uses: actions/checkout@v4
-      - name : Install Node Js
-        uses : actions/setup-node@v4
-        with:
-          node-version: 18
-      - name : Install Dependencies
-        run : npm install
-      - name : Test-run
-        run : npm test
+    Node-js-job :
+      runs-on : ubuntu-latest
+      steps : 
+        - name : Get code
+        - uses: actions/checkout@v4
+        - name : Install Node Js
+        - uses : actions/setup-node@v4
+          with:
+            node-version: 18
+        - name : Install Dependencies
+          run : npm install
+        - name : Test-run
+          run : npm test
 
 
